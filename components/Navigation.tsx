@@ -16,9 +16,9 @@ export default function Navigation() {
 			<div className="container max-w-screen-md mx-auto">
 				<div className="flex justify-between items-center py-4">
 					<div>
-						<a href="/" className="text-xl font-bold">
+						<Link href="/" className="text-xl font-bold">
 							<DemuxedMark height="25" width="25" />
-						</a>
+						</Link>
 					</div>
 					<div className="hidden md:flex items-center">
 						{navItems.map((item) => (
