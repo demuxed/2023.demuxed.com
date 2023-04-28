@@ -1,4 +1,6 @@
-const DemuxedLogo = (props) => (
+import { SVGProps } from 'react';
+
+const DemuxedLogo = (props: SVGProps<SVGSVGElement>) => (
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 548 90" fill="none" {...props}>
 		<path
 			fill="currentColor"
