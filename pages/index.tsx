@@ -1,124 +1,72 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { CalendarIcon, MapPinIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
 
-const inter = Inter({ subsets: ['latin'] })
+import DemuxedLogo from '@/components/DemuxedLogo';
+import Header from '@/components/Header';
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+	return (
+		<div className="bg-white min-h-screen">
+			<div className="container max-w-screen-md mx-auto px-4 min-h-screen flex flex-col justify-center">
+				<DemuxedLogo className="w-1/2" />
+				<Header size={1} className="font-bold mt-8 mb-6">
+					The conference for
+					<br /> video devs
+				</Header>
+				<Header size={2} className="font-semibold mb-10">
+					<span className="whitespace-nowrap">
+						<CalendarIcon className="h-8 w-8 inline align-top" /> October 24-26, 2023
+					</span>
+					<span className="whitespace-nowrap sm:ml-4">
+						<MapPinIcon className="h-8 w-8 inline align-top" /> San Francisco
+					</span>
+				</Header>
+				<div className="prose prose-xl">
+					<p>
+						Get out the calendar (app) and start adding some blocks, because it's time to start prepping for the 9th
+						edition of the best damn conference for video engineers on the planet. Demuxed 2023 starts after lunch on{' '}
+						<strong>October 24th and goes through October 26th</strong> in the same venue as last year:{' '}
+						<Link href="https://bespokesf.co/events-overview">Bespoke</Link> (and, well...the Internet).
+					</p>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+					<p>
+						Never heard of or been to Demuxed before? Great! We're glad you're here. Demuxed is a single-track
+						conference and community for and by developers that work with online video. This one's for all the folks
+						that have annoyed their friends by pausing a streaming movie to look at artifacts or opened the dev tools to
+						check out a player. If you've ever even <em>considered</em> quoting an open source movie (or can even name
+						one for that matter), you'll fit right in: We're the folks that love (and sometimes hate) the #1 use of the
+						Internet, and this is where we get together and talk about building it.
+					</p>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+					<p>
+						Tickets will go on sale over the summer, but in the meantime: we'd love for you to get involved! The{' '}
+						<Link href="/submit">call for proposals is now open</Link> (hence the "submit" button below). The selection
+						process will bias for speakers that are able to attend in person, but please submit a talk either way, we're
+						open to getting creative for good content.
+					</p>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+					<p>
+						We're also looking for sponsors, so if you're looking to get your company involved in the community, or just{' '}
+						<span title="p.s. I'm open to fancy dinners and stuff">personally want to flex</span>,{' '}
+						<Link href="mailto:sponsor@demuxed.com">drop us an email</Link> (the other button below) and we'll send you
+						the prospectus.
+					</p>
+				</div>
+				<div className="flex flex-col md:flex-row mt-8 gap-8">
+					<Link
+						href="/submit"
+						className="md:w-1/2 bg-black text-white text-center border-2 border-black py-4 px-8 hover:bg-white hover:text-black hover:border-black hover:underline"
+					>
+						Submit a talk
+					</Link>
+					<Link
+						href="mailto:sponsor@demuxed.com"
+						className="md:w-1/2 bg-white text-black text-center border-2 border-black py-4 px-8 hover:bg-black hover:text-white hover:border-black hover:underline"
+					>
+						Sponsor
+					</Link>
+				</div>
+			</div>
+		</div>
+	);
 }
