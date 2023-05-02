@@ -6,6 +6,7 @@ const navItems = [
 	{ text: 'Home', href: '/' },
 	{ text: 'Submit', href: '/submit' },
 	{ text: 'Video Dev', href: 'https://video-dev.org' },
+	{ text: 'Demuxed.com', href: 'https://demuxed.com' },
 ];
 
 export default function Navigation() {
@@ -25,7 +26,7 @@ export default function Navigation() {
 							<Link
 								href={item.href}
 								key={item.href}
-								className="text-sm font-semibold text-gray-700 mx-2 hover:text-gray-900"
+								className="text-sm font-semibold text-gray-700 mx-2 hover:underline hover:text-gray-900"
 							>
 								{item.text}
 							</Link>
@@ -56,7 +57,7 @@ export default function Navigation() {
 						<Link
 							href={item.href}
 							key={item.href}
-							className="block text-sm font-semibold text-gray-700 mx-2 hover:text-gray-900"
+							className="block text-sm font-semibold text-gray-700 mx-2 hover:underline hover:text-gray-900"
 						>
 							{item.text}
 						</Link>
