@@ -15,7 +15,7 @@ export default function Home() {
 				</Header>
 				<Header size={2} className="font-semibold mb-10">
 					<span className="inline-block pr-4 pt-4">
-						<CalendarIcon className="h-8 w-8 inline align-top" /> October 24-26, 2023
+						<CalendarIcon className="h-8 w-8 inline align-top" /> October 24-25, 2023
 					</span>
 					<span className="inline-block pt-4">
 						<MapPinIcon className="h-8 w-8 inline align-top" /> San Francisco
@@ -24,9 +24,8 @@ export default function Home() {
 				<div className="prose prose-xl">
 					<p>
 						Get out the calendar (app) and start adding some blocks, because it's time to start prepping for the 9th
-						edition of the best damn conference for video engineers on the planet. Demuxed 2023 starts after lunch on{' '}
-						<strong>October 24th and goes through October 26th</strong> in the same venue as last year:{' '}
-						<Link href="https://bespokesf.co/events-overview">Bespoke</Link> (and, well...the Internet).
+						edition of the best damn conference for video engineers on the planet. Demuxed 2023 is October 25th and 26th
+						at <Link href="https://terrasf.com/">Terra Gallery</Link> in SF (and, well...the Internet).
 					</p>
 
 					<p>
