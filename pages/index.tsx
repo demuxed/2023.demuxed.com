@@ -24,7 +24,7 @@ export default function Home() {
 				<div className="prose prose-xl">
 					<p>
 						Get out the calendar (app) and start adding some blocks, because it's time to start prepping for the 9th
-						edition of the best damn conference for video engineers on the planet. Demuxed 2023 is October 25th and 26th
+						edition of the best damn conference for video engineers on the planet. Demuxed 2023 is October 24th and 25th
 						at <Link href="https://terrasf.com/">Terra Gallery</Link> in SF (and, well...the Internet).
 					</p>
 
