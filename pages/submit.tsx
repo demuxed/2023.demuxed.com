@@ -3,7 +3,7 @@ export default function Home() {
 		<div className="bg-white min-h-screen mt-12">
 			<div className="container max-w-screen-md mx-auto p-4 min-h-screen flex flex-col justify-center prose lg:prose-xl">
 				<h1>Submit a talk proposal for Demuxed 2023</h1>
-				<h2 className="mt-4">October 24th-26th 2023, San Francisco</h2>
+				<h2 className="mt-4">October 24th & 25th 2023, San Francisco</h2>
 				<iframe
 					className="airtable-embed"
 					src="https://airtable.com/embed/shrM3I6ta6f1P7osG?backgroundColor=white"
