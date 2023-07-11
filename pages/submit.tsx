@@ -4,13 +4,13 @@ export default function Home() {
 			<div className="container max-w-screen-md mx-auto p-4 min-h-screen flex flex-col justify-center prose lg:prose-xl">
 				<h1>Submit a talk proposal for Demuxed 2023</h1>
 				<h2 className="mt-4">October 24th & 25th 2023, San Francisco</h2>
-				<iframe
-					className="airtable-embed"
-					src="https://airtable.com/embed/shrM3I6ta6f1P7osG?backgroundColor=white"
-					width="100%"
-					height="533"
-					style={{ background: 'transparent', border: '1px solid #ccc' }}
-				></iframe>
+				<div className="border border-black bg-slate-100 px-4">
+					<h3>Talk submissions are closed!</h3>
+					<p>
+						Thanks for submitting so many amazing talks, we're hoping to get back to everyone by the end of July, and
+						announce the schedule shortly after.
+					</p>
+				</div>
 				<div>
 					<h2>The Process</h2>
 					<p>
